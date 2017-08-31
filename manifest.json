@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "runtime-message-example",
+  "version": "0.0.1",
+  "description": "runtime-message-example",
+  "author": "kain",
+  "developer": {
+    "name": "kain"
+  },
+  "default_locale": "en",
+  "homepage_url": "https://github.com/kainsavage/runtime-message-example",
+  "applications": {
+    "gecko": {
+      "id": "runtime-message-example@teamclerks.net",
+      "strict_min_version": "55.0"
+    }
+  },
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "src/basic-helper.js",
+      "src/helper.js",
+      "src/background.js"
+    ]
+  },
+  "options_ui": {
+    "page": "options/index.html"
+  }
+}
